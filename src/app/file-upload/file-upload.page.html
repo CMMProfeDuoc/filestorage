@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>fileUpload</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form [formGroup]="objeto">
+    <ion-input type="text" placeHolder="nombre" formControlName="nombre"></ion-input>
+    <ion-input type="text" placeHolder="descripcion breve" formControlName="descripcion"></ion-input>
+    <ion-input type="text" placeHolder="categoria" formControlName="categoria"></ion-input>
+    <ion-input type="text" placeHolder="subcategoria" formControlName="subCategoria"></ion-input>
+  </form>
+
+  <ion-button (click)="subirArchivo();"> SUBIR OBJETO </ion-button>
+</ion-content>

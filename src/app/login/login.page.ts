@@ -55,9 +55,13 @@ export class LoginPage implements OnInit {
 
     if (user) {
       console.log("OK");
-      this.router.navigateByUrl("/home");
+      this.router.navigateByUrl('home');
     } else {
       console.log("NOT OK")
     }
+  }
+
+  goToHome (){
+    this.router.navigateByUrl('home');
   }
 }

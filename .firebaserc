@@ -1,12 +1,19 @@
 {
   "projects": {
-    "default": "fbtestapp-e1bf4"
+    "default": "pruebasduoc-a7df6"
   },
   "targets": {
     "fbtestapp-e1bf4": {
       "hosting": {
         "app": [
           "fbtestapp-e1bf4"
+        ]
+      }
+    },
+    "pruebasduoc-a7df6": {
+      "hosting": {
+        "app": [
+          "pruebasduoc-a7df6"
         ]
       }
     }

@@ -13,7 +13,6 @@ export class HomePage {
   constructor(
     private authService : AuthService,
     private router : Router,
-    private fileService : FileService,
   ) { }
 
   logout () {
@@ -21,14 +20,8 @@ export class HomePage {
     this.router.navigateByUrl('')
   }
 
-  agregarNota () {
-    try {
-      this.fileService.addNote({text:'cosa'});
-      console.log("nota agregada");
-    } catch (e){
-      console.log(e);
-    }
-
+  goToUpload () {
+    this.router.navigateByUrl('file-upload')
   }
 
 }

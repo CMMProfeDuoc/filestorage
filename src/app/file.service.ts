@@ -1,4 +1,4 @@
-import { Injectable, Query } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Firestore, addDoc, collection, collectionData, deleteDoc, doc } from '@angular/fire/firestore';
 
 
@@ -11,21 +11,15 @@ export class FileService {
     private firestore : Firestore
   ) { }
 
-  getNote () {
-    const notesRef = collection(this.firestore,'notes');
+  getNote (path:string) {
+    const notesRef = collection(this.firestore, path);
     return collectionData(notesRef);
   }
 
-  addNote (note:any) {
-    const notesRef = collection(this.firestore,'notes');
-    return addDoc(notesRef,note);
+  addCosa (cosa:any, path:string) {
+    const notesRef = collection(this.firestore, path);
+    return addDoc(notesRef,cosa);
   }
-
-  deleteNote(note: any) {
-    const noteDocRef = doc(this.firestore, 'notes/${note.id}');
-    return deleteDoc(noteDocRef);
-  }
-
 
 }
 
