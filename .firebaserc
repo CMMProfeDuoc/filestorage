@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "fbtestapp-e1bf4"
+  },
+  "targets": {
+    "fbtestapp-e1bf4": {
+      "hosting": {
+        "app": [
+          "fbtestapp-e1bf4"
+        ]
+      }
+    }
+  }
+}
