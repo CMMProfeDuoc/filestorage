@@ -18,7 +18,11 @@ const routes: Routes = [
   {
     path: 'file-upload',
     loadChildren: () => import('./file-upload/file-upload.module').then( m => m.FileUploadPageModule)
+  },  {
+    path: 'animales',
+    loadChildren: () => import('./animales/animales.module').then( m => m.AnimalesPageModule)
   },
+
 
 ];
 
